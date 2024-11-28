@@ -46,6 +46,8 @@ brew install uv git sqlite3
 3. Configure Claude Desktop:
    - Open `%APPDATA%\Claude\claude_desktop_config.json`
    - Add the following configuration:
+
+   db
    ```json
    {
      "mcpServers": {
@@ -61,6 +63,24 @@ brew install uv git sqlite3
    }
    ```
    Replace `FULL_PATH_TO_YOUR_test.db` with the actual path to your test.db file.
+
+   desktop 
+  ```json 
+    {
+    "mcpServers": {
+      "filesystem": {
+        "command": "C:\\Program Files\\nodejs\\node.exe",
+        "args": ["D:\\Projects\\model-context-protocol-demo\\node_modules\\@modelcontextprotocol\\server-filesystem\\dist\\index.js", 
+          "C:/test/"],
+        "env": {
+          "NODE_ENV": "production"
+        }
+      }
+    }
+  }
+    ```
+
+
 
 4. Restart Claude Desktop
 
