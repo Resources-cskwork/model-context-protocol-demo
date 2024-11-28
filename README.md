@@ -48,7 +48,7 @@ brew install uv git sqlite3
    - Add the following configuration:
 
    db
-   ```json
+  ```json
    {
      "mcpServers": {
        "sqlite": {
@@ -61,10 +61,10 @@ brew install uv git sqlite3
        }
      }
    }
-   ```
-   Replace `FULL_PATH_TO_YOUR_test.db` with the actual path to your test.db file.
+  ```
+  Replace `FULL_PATH_TO_YOUR_test.db` with the actual path to your test.db file.
 
-   desktop 
+  desktop 
   ```json 
     {
     "mcpServers": {
@@ -78,9 +78,7 @@ brew install uv git sqlite3
       }
     }
   }
-    ```
-
-
+  ```
 
 4. Restart Claude Desktop
 
